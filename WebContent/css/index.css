@@ -1,3 +1,6 @@
+/**================================
+*		Setting General Style for Game Window
+===================================**/
 .main{
     background-color:#9dd9ed;
     background-image:-webkit-gradient(
@@ -7,9 +10,7 @@
         color-stop(0, #01b9f5),
         color-stop(0.51, #9dd9ed)
     );
-    /*
-
-	*/
+    /*cannot scroll*/
     background-attachment:fixed;
     height:480px;
     width:320px;
@@ -17,14 +18,14 @@
     left:50%;
     margin-left:-160px;
 }
+
+/* ===========
+*		Health Bar
+==============*/
 .life{
     width:100px;
     height:10px;
     position: absolute;
-	/*
-
-    
-	*/
     z-index:2;
     left:10px;
     top:10px;
@@ -35,7 +36,6 @@
 
 }
 .life label{
-	/*琛屽唴鍧�*/
     display: inline-block;
     width: 0px;
     height:10px;
@@ -43,6 +43,10 @@
     border-radius: 7px;
     float:left;
 }
+
+/**=========
+*	Setting Levels
+=============*/
 .level{
     position: absolute;
     z-index:2;
@@ -56,14 +60,16 @@
     color: #fb0;
     font-weight: bolder;
 }
+
+/**=====================
+*		Game Start/ Welcome Page
+======================*/
 .start_flush{
     position: absolute;
     left:0;
     top:0;
     width:320px;
     height:480px;
-    /*
-    */
     background:url(../img/game_bg.png) no-repeat;
     z-index: 10;
 	background-size: 320px 480px;
@@ -78,6 +84,7 @@
     left:239px;
     top:394px;
 }
+/* Before the button been clicked*/
 .start_btn:before{
     content:"";
     display: inline-block;
@@ -94,6 +101,10 @@
 .start_btn:active:before{
     border-left-color: #fb0;
 }
+
+/**=========================
+**	GameOver Pop-up Window
+===========================*/
 .end_flush{
     position: absolute;
     left:30px;
@@ -112,13 +123,10 @@
 	height:53px;
 	background:url(../img/baozi.png) no-repeat;
 	background-size:55px 106px;
-	margin: 12px 0 0 12px;/**/
+	margin: 12px 0 0 12px;
 }
 .end_flush .icon.happy{
-	/*
-
-	*/
-	background:url(../img/baozi.png) 0 -54px no-repeat;
+	background:url(../img/baozi.png) 0 -54px no-repeat; /*0 is x and 54 is y */
 	background-size:55px 107px;
 }
 .end_flush p{
@@ -138,42 +146,21 @@
     display: inline-block;
     position: absolute;
     color:#fb0;
-    /*
-
-    */
 	text-shadow:1px 1px 1px #333333;
     bottom:20px;
     right:20px;
 	font-size:16px;
 	font-weight:bolder;
-	/*
-
-	*/
 	text-decoration:none;
 	line-height:23px;
 }
 .end_flush .replay_btn:after{
 	content:"";
 	display:inline-block;
-	/*
-
-	*/
 	background:url(../img/icons_btn.png) no-repeat right 0;
-	/*
-	        
-	*/
     background-size: 19px 108px;
 	width:19px;
 	height:23px;
 	float:right;
-	/*
-	
-	*/
     padding-right: 5px;
 }
-
-
-
-
-
-
