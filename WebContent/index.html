@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ManDown100Levels</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+	<div class="main" id="js_main" tabindex="-1">
+		<canvas id="canvas" width="320" height="480"></canvas>
+		<!-- show health -->
+		<div class="life">
+			<label id="js_life"></label>
+		</div>
+		<!--  showing levels -->
+		<div class="level">
+			<span id="js_level">0</span>th Level
+		</div>
+	<!--  Welcome Page  -->
+		<div class="start_flush" id="js_start_flush">
+			<a href="javascript:void(0)" id="js_start_btn" style="display: none;"
+				class="start_btn" onclick="Main.start()"></a> <span
+				id="js_start_loading"
+				style="position: absolute; left: 241px; top: 417px; font-size: 16px; font-weight: bolder;">Loading ...</span>
+		</div>
+
+		<div class="end_flush" id="js_end_flush">
+			<span class="icon"></span>
+			<p></p>
+			<a href="javascript:void(0)" class="replay_btn"
+				onclick="Main.replay()"></a>
+		</div>
+	</div>
+
+</body>
+</html>
